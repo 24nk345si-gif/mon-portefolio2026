@@ -18,7 +18,7 @@ H1{
 }
 body {
     background-color:var(--gris-tres-clair);
-    font-family: Robot,sans-serif;
+    font-family: Roboto,sans-serif;
     line-height: 1.6;
 }
 header{
@@ -26,7 +26,7 @@ header{
     box-shadow:2px 6px 10px rgb(0, 0, 0, 0.05);
     position:sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -146,6 +146,58 @@ border-radius: 2px;
 .apropos p {
 margin-bottom: 2rem;
 color: var(--gris-fonce);
-font-size: 1.3rem;
+font-size: 1.2rem;
 }
-
+.competances table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #FFF;
+    box-shadow: 0 5px rgb(0, 0, 0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.competances table th, .competances table td {
+    padding: 15px;
+}
+.competances table thead{
+    background-color: var(--violet-doux);
+    color: #FFF ;
+    text-transform: uppercase;
+}
+.competances table tbody td {
+    border-bottom: 1px solid var(--gris-claire);
+}
+.competances table tbody tr:nth-child(oven) {
+    background-color: #FDFDFD ;
+}
+.competances table tbody tr {
+    transition: background-color 0.3s ease;
+}
+.competances table tbody tr:hover {
+    background-color: #F0F0F0;
+}
+.competances table th {
+text-align: left;
+}
+footer {
+    margin-top: 3rem;
+    background-color: var(--violet-doux);
+    padding: 3rem 0;
+    text-align: center;
+}
+footer p {
+    color: white;
+    margin-bottom: 1.2rem;
+}
+footer a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+footer a:hover {
+    color: var(--orange-vif);
+    transform: translateY(-3px);
+}
